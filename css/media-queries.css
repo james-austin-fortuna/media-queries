@@ -1,10 +1,22 @@
 body {
-    display: inline-grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(5, 1fr);
+    font-family: 'Ramabhadra', sans-serif;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 10% 35% 40% 5% 10%;
     grid-template-areas:
-            "h1 h1 . nav-links nav-links"
-            " ";
+            "alert-info hidden-on-desktop alert-info hidden-on-desktop alert-info hidden-on-desktop"
+            "h1 h1 ";
+}
+@media screen and (min-width: 768px) {
+    #nav-links {
+        grid-template-rows: repeat(10, 1fr);
+        grid-template-areas:
+    }
+}
+@media screen and (min-width: 992px) {
+    h1 {
+
+    }
 }
 #nav-links {
 
@@ -12,6 +24,7 @@ body {
 #main {
 
 }
+div
 .sub-section {
 
 }
